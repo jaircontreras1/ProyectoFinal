@@ -1,85 +1,92 @@
-# CodeStart IA Generativa - Java Web Application NetBeans 14
+# CodeStart IA
 
-## Topico
-Desarrollar un software web: plataforma de enseñanza, tips, consejos y normatividades para la Inteligencia Artificial Generativa.
+## Descripción
 
-## Tipo de proyecto
-Java Web Application para NetBeans 14, desarrollado con JSP, Servlets, JDBC, HTML, CSS responsivo y MySQL/MariaDB de XAMPP.
+Este proyecto proyecto académico desarrollado como una aplicación Java Web en NetBeans 14. Su objetivo es ofrecer un espacio educativo donde los usuarios puedan aprender conceptos básicos sobre Inteligencia Artificial Generativa, consultar tips y consejos de uso responsable, así como revisar normatividades y buenas prácticas relacionadas con la ética, privacidad, derechos de autor y validación de información.
 
-## Modulos principales
-1. Lecciones de IA Generativa
-2. Tips y consejos de uso responsable
-3. Normatividades, politicas y buenas practicas
+El proyecto está pensado para usuarios principiantes que desean conocer cómo utilizar herramientas de IA Generativa de manera crítica, segura y responsable.
 
-Funciones de apoyo:
-- Registro de usuarios
-- Inicio y cierre de sesion
-- Progreso de lecciones
-- Panel administrador basico
+## Objetivo general
 
-## Requisitos
-- NetBeans 14
-- JDK 8 o superior
-- Apache Tomcat 9 recomendado para proyectos Java Web clasicos con javax.servlet
-- XAMPP con MySQL/MariaDB activo
-- phpMyAdmin para importar la base de datos
-- mysql-connector-java-5.1.23-bin.jar
+Desarrollar una plataforma web responsiva que permita consultar contenidos organizados sobre Inteligencia Artificial Generativa, incluyendo lecciones, consejos prácticos y normatividades, además de registrar usuarios y guardar su progreso de aprendizaje.
 
-## Importante sobre Apache y XAMPP
-El Apache de XAMPP es Apache HTTP Server y sirve paginas PHP/HTML. No ejecuta JSP ni Servlets directamente.
-Para este proyecto Java Web debes usar Apache Tomcat desde NetBeans. XAMPP se usa para MySQL/MariaDB y phpMyAdmin.
+## Módulos principales
 
-## Como ejecutar
-1. Descomprime el proyecto.
-2. Copia el archivo `mysql-connector-java-5.1.23-bin.jar` dentro de la carpeta `lib/`.
-3. Abre XAMPP e inicia MySQL.
-4. Entra a phpMyAdmin.
-5. Importa el archivo `database/plataforma_ia_generativa.sql`.
-6. Abre NetBeans 14.
-7. Ve a File > Open Project.
-8. Selecciona la carpeta `CodeStartIAWebNetBeans14`.
-9. Configura Tomcat 9 en Services > Servers.
-10. Ejecuta el proyecto.
+### 1. Lecciones de IA Generativa
 
-## Conexion
-Archivo:
-`src/java/codestartia/config/Conexion.java`
+Este módulo permite consultar contenidos educativos sobre:
 
-Configuracion por defecto:
-- Host: localhost
-- Puerto: 3306
-- Base: plataforma_ia_generativa
-- Usuario: root
-- Password: vacio
+- Conceptos básicos de IA Generativa.
+- Funcionamiento general.
+- Ejemplos de uso.
+- Riesgos y limitaciones.
+- Beneficios y buenas prácticas.
 
-## Usuarios de prueba
-Administrador:
-- correo: admin@ia.edu
-- password: 1234
+### 2. Tips y consejos
 
-Alumno:
-- correo: alumno@ia.edu
-- password: 1234
+Este módulo muestra recomendaciones prácticas para usar IA Generativa de forma responsable, por ejemplo:
 
-## GitHub
-Comandos sugeridos:
-```bash
-git init
-git add .
-git commit -m "Proyecto plataforma IA Generativa Java Web"
-git branch -M main
-git remote add origin https://github.com/usuario/plataforma-ia-generativa.git
-git push -u origin main
-```
+- No ingresar datos personales o confidenciales.
+- Verificar las respuestas con fuentes confiables.
+- Usar la IA como apoyo, no como sustituto del criterio propio.
+- Citar el uso de IA cuando sea necesario.
+- Evitar copiar respuestas sin análisis propio.
 
-## Documentacion academica
-La carpeta `docs/` contiene:
-- planeacion_analisis_diseno_desarrollo.md
-- ganttproject_actividades.csv
-- proyecto_gantt.gan
-- uml_clases.puml
-- uml_casos_uso.puml
-- wireframes.md
-- foda.md
-- github.md
+### 3. Normatividades y buenas prácticas
 
+Este módulo reúne información relacionada con:
+
+- Ética en el uso de IA.
+- Privacidad y protección de datos.
+- Derechos de autor.
+- Transparencia.
+- Validación de resultados.
+- Uso académico responsable.
+
+## Funciones del sistema
+
+- Página principal informativa.
+- Registro de usuarios.
+- Inicio y cierre de sesión.
+- Consulta de lecciones.
+- Consulta de tips y consejos.
+- Consulta de normatividades.
+- Registro de progreso de aprendizaje.
+- Panel de administrador.
+- CRUD básico de contenidos.
+
+## Tecnologías utilizadas
+
+- Java Web Application
+- Apache NetBeans IDE 14
+- JSP
+- Servlets
+- JDBC
+- MySQL / MariaDB
+- XAMPP
+- phpMyAdmin
+- Apache Tomcat 9
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript básico
+- Git y GitHub
+
+## Requisitos previos
+
+Antes de ejecutar el proyecto, se recomienda tener instalado:
+
+- JDK 8 o JDK 11
+- Apache NetBeans IDE 14
+- Apache Tomcat 9
+- XAMPP
+- MySQL o MariaDB
+- phpMyAdmin
+- MySQL Connector/J
+
+## Base de datos
+
+Nombre de la base de datos:
+
+```sql
+plataforma_ia_generativa
