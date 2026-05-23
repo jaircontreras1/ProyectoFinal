@@ -1,80 +1,93 @@
 # CodeStart IA
 
-## Descripción
+## Plataforma educativa sobre Inteligencia Artificial Generativa
 
-Este proyecto proyecto académico desarrollado como una aplicación Java Web en NetBeans 14. Su objetivo es ofrecer un espacio educativo donde los usuarios puedan aprender conceptos básicos sobre Inteligencia Artificial Generativa, consultar tips y consejos de uso responsable, así como revisar normatividades y buenas prácticas relacionadas con la ética, privacidad, derechos de autor y validación de información.
+CodeStart IA es una aplicación web académica desarrollada en Java Web con NetBeans. Su propósito es ofrecer una plataforma sencilla donde los usuarios puedan aprender conceptos básicos sobre Inteligencia Artificial Generativa, consultar consejos prácticos y revisar contenidos relacionados con su uso en contextos académicos y tecnológicos.
 
-El proyecto está pensado para usuarios principiantes que desean conocer cómo utilizar herramientas de IA Generativa de manera crítica, segura y responsable.
+El proyecto fue desarrollado como parte de la materia de Ingeniería en Software, aplicando fases de planeación, análisis, diseño y desarrollo de software.
+
+---
+
+## Descripción del proyecto
+
+Actualmente, muchas personas utilizan herramientas de Inteligencia Artificial Generativa sin conocer completamente cómo funcionan, qué ventajas ofrecen, qué riesgos pueden presentar o cómo validar la información que generan.
+
+CodeStart IA busca resolver esta necesidad mediante una plataforma web organizada en módulos educativos. El sistema permite consultar lecciones, tips y contenidos informativos desde una interfaz clara y responsiva.
+
+Además, incluye funciones básicas como registro de usuarios, inicio de sesión, administración de contenidos y seguimiento del progreso de aprendizaje.
+
+---
 
 ## Objetivo general
 
-Desarrollar una plataforma web responsiva que permita consultar contenidos organizados sobre Inteligencia Artificial Generativa, incluyendo lecciones, consejos prácticos y normatividades, además de registrar usuarios y guardar su progreso de aprendizaje.
+Desarrollar una aplicación web responsiva que funcione como plataforma educativa para consultar contenidos relacionados con Inteligencia Artificial Generativa, permitiendo a los usuarios acceder a lecciones, tips, recomendaciones y registrar su progreso dentro del sistema.
+
+---
+
+## Objetivos específicos
+
+- Presentar lecciones introductorias sobre Inteligencia Artificial Generativa.
+- Mostrar tips y consejos para el uso adecuado de herramientas de IA.
+- Permitir el registro e inicio de sesión de usuarios.
+- Registrar el progreso de aprendizaje de cada usuario.
+- Implementar un panel de administración para gestionar contenidos.
+- Conectar la aplicación con una base de datos relacional.
+- Publicar el proyecto en GitHub con documentación básica de instalación y ejecución.
+
+---
 
 ## Módulos principales
 
-### 1. Lecciones de IA Generativa
+### 1. Lecciones
 
-Este módulo permite consultar contenidos educativos sobre:
-
-- Conceptos básicos de IA Generativa.
-- Funcionamiento general.
-- Ejemplos de uso.
-- Riesgos y limitaciones.
-- Beneficios y buenas prácticas.
+Este módulo muestra contenidos educativos sobre Inteligencia Artificial Generativa, incluyendo conceptos básicos, ejemplos de uso, beneficios, riesgos y limitaciones.
 
 ### 2. Tips y consejos
 
-Este módulo muestra recomendaciones prácticas para usar IA Generativa de forma responsable, por ejemplo:
+Este módulo presenta recomendaciones prácticas para utilizar herramientas de IA Generativa, como verificar respuestas, cuidar la información personal y usar la IA como apoyo para el aprendizaje.
 
-- No ingresar datos personales o confidenciales.
-- Verificar las respuestas con fuentes confiables.
-- Usar la IA como apoyo, no como sustituto del criterio propio.
-- Citar el uso de IA cuando sea necesario.
-- Evitar copiar respuestas sin análisis propio.
+### 3. Contenidos informativos
 
-### 3. Normatividades y buenas prácticas
+Este módulo permite consultar información complementaria relacionada con buenas prácticas, uso académico, privacidad, derechos de autor y validación de resultados.
 
-Este módulo reúne información relacionada con:
+### 4. Usuarios
 
-- Ética en el uso de IA.
-- Privacidad y protección de datos.
-- Derechos de autor.
-- Transparencia.
-- Validación de resultados.
-- Uso académico responsable.
+Permite registrar nuevos usuarios, iniciar sesión, cerrar sesión y diferenciar entre usuario normal y administrador.
 
-## Funciones del sistema
+### 5. Progreso
 
-- Página principal informativa.
-- Registro de usuarios.
-- Inicio y cierre de sesión.
-- Consulta de lecciones.
-- Consulta de tips y consejos.
-- Consulta de normatividades.
-- Registro de progreso de aprendizaje.
-- Panel de administrador.
-- CRUD básico de contenidos.
+Permite que un usuario registrado marque lecciones como completadas para llevar un seguimiento básico de su avance.
+
+### 6. Administración
+
+Permite al administrador agregar, editar y eliminar contenidos dentro de la plataforma.
+
+---
 
 ## Tecnologías utilizadas
 
-- Java Web Application
-- Apache NetBeans IDE 14
-- JSP
-- Servlets
-- JDBC
-- MySQL / MariaDB
-- XAMPP
-- phpMyAdmin
-- Apache Tomcat 9
-- HTML5
-- CSS3
-- Bootstrap
-- JavaScript básico
-- Git y GitHub
+| Tecnología | Uso |
+|---|---|
+| Java | Lenguaje principal del proyecto |
+| JSP | Construcción de vistas web |
+| Servlets | Controladores y lógica de navegación |
+| JDBC | Conexión con la base de datos |
+| MySQL / MariaDB | Base de datos relacional |
+| XAMPP | Servidor local para Apache y MySQL |
+| phpMyAdmin | Administración de la base de datos |
+| Apache Tomcat 9 | Servidor de aplicaciones |
+| NetBeans 14 | IDE de desarrollo |
+| Bootstrap | Diseño responsivo |
+| HTML5 | Estructura de páginas |
+| CSS3 | Estilos visuales |
+| JavaScript | Funciones básicas del frontend |
+| Git / GitHub | Control de versiones y publicación |
+
+---
 
 ## Requisitos previos
 
-Antes de ejecutar el proyecto, se recomienda tener instalado:
+Antes de ejecutar el proyecto, es necesario tener instalado:
 
 - JDK 8 o JDK 11
 - Apache NetBeans IDE 14
@@ -84,9 +97,11 @@ Antes de ejecutar el proyecto, se recomienda tener instalado:
 - phpMyAdmin
 - MySQL Connector/J
 
+---
+
 ## Base de datos
 
-Nombre de la base de datos:
+El proyecto utiliza una base de datos llamada:
 
 ```sql
 plataforma_ia_generativa
