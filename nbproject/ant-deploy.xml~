@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CodeStartIAWebNetBeans14-deploy" default="default" basedir="..">
+    <target name="default"/>
+    <target name="-deploy-ant"/>
+    <target name="-undeploy-ant"/>
+    <target name="-deploy-debug-info"/>
+    <target name="-deploy-debug"/>
+    <target name="run-deploy"/>
+</project>

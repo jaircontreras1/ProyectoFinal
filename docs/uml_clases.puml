@@ -1,0 +1,64 @@
+@startuml
+title Diagrama UML de clases - Plataforma IA Generativa
+class Usuario {
+  - int idUsuario
+  - String nombre
+  - String correo
+  - String tipoUsuario
+  + boolean isAdmin()
+}
+class Leccion {
+  - int idLeccion
+  - String titulo
+  - String descripcion
+  - String contenido
+  - String categoria
+  - String nivel
+}
+class Tip {
+  - int idTip
+  - String titulo
+  - String consejo
+  - String tipo
+  - String prioridad
+}
+class Normatividad {
+  - int idNormatividad
+  - String titulo
+  - String descripcion
+  - String institucion
+  - String enlace
+  - String tipo
+}
+class Progreso {
+  - int idProgreso
+  - int idUsuario
+  - int idLeccion
+  - String estado
+  - Date fecha
+}
+class Conexion {
+  + Connection getConnection()
+}
+class UsuarioDAO {
+  + Usuario login(String correo, String password)
+  + boolean registrar(String nombre, String correo, String password)
+}
+class ContenidoDAO {
+  + List<Leccion> listarLecciones()
+  + Leccion obtenerLeccion(int id)
+  + List<Tip> listarTips()
+  + List<Normatividad> listarNormatividades()
+  + void guardarLeccion(Leccion l)
+  + void eliminarLeccion(int id)
+}
+class ProgresoDAO {
+  + void completar(int idUsuario, int idLeccion)
+  + Set<Integer> leccionesCompletadas(int idUsuario)
+}
+Usuario "1" -- "0..*" Progreso
+Leccion "1" -- "0..*" Progreso
+Conexion ..> UsuarioDAO
+Conexion ..> ContenidoDAO
+Conexion ..> ProgresoDAO
+@enduml

@@ -1,0 +1,13 @@
+Actividad,Inicio,Duracion,Entregable
+Definir problematica y tema,Semana 1,1 semana,Problematica definida
+Objetivo alcance y modulos,Semana 1,1 semana,Objetivo y alcance
+Requerimientos,Semana 2,1 semana,RF y RNF
+Diagramas UML,Semana 2,1 semana,Clases y casos de uso
+Wireframes,Semana 3,1 semana,Bocetos de interfaz
+Diseno de base de datos,Semana 3,1 semana,Modelo relacional SQL
+Conexion JDBC a MySQL,Semana 4,1 semana,Conexion funcional
+Modulo lecciones,Semana 4,1 semana,JSP y DAO de lecciones
+Modulo tips,Semana 5,1 semana,JSP y DAO de tips
+Modulo normatividades,Semana 5,1 semana,JSP y DAO de normatividades
+Pruebas y correcciones,Semana 6,1 semana,Sistema validado
+GitHub y cierre,Semana 6,1 semana,Repositorio y documentacion

@@ -1,0 +1,41 @@
+:root {
+    --primary: #243b80;
+    --secondary: #5f72be;
+    --light: #f4f7fb;
+    --dark: #172033;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--light); color: #222; }
+a { text-decoration: none; }
+.navbar { background: var(--dark); color: #fff; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.logo { font-weight: bold; color: #fff; font-size: 22px; }
+.menu a { color: #fff; margin: 0 8px; font-size: 14px; }
+.menu a:hover { text-decoration: underline; }
+.hero { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 70px 25px; text-align: center; }
+.hero h1 { font-size: 42px; margin-bottom: 10px; }
+.hero p { max-width: 850px; margin: auto; font-size: 18px; line-height: 1.6; }
+.container { max-width: 1150px; margin: auto; padding: 24px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card { background: #fff; border-radius: 14px; padding: 22px; box-shadow: 0 8px 22px rgba(0,0,0,.08); border: 1px solid #e7eaf2; }
+.card h3 { margin-top: 0; color: var(--primary); }
+.badge { display: inline-block; padding: 6px 10px; background: #e9eefc; color: var(--primary); border-radius: 99px; font-size: 13px; margin: 3px 0; }
+.btn { display: inline-block; background: var(--primary); color: #fff; padding: 10px 14px; border-radius: 9px; border: 0; cursor: pointer; margin-top: 8px; }
+.btn.secondary { background: #4f5f75; }
+.btn.danger { background: #b3261e; }
+.btn:hover { opacity: .92; }
+.form-box { max-width: 480px; margin: 35px auto; }
+input, textarea, select { width: 100%; padding: 11px; margin: 8px 0 14px; border: 1px solid #c8cfdd; border-radius: 8px; font-family: inherit; }
+textarea { min-height: 140px; }
+.alert { padding: 12px 14px; border-radius: 8px; margin-bottom: 15px; }
+.alert.ok { background: #d9f7e7; color: #14532d; }
+.alert.error { background: #ffe2e2; color: #8a1f1f; }
+.table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; }
+.table th, .table td { padding: 12px; border-bottom: 1px solid #e7eaf2; text-align: left; }
+.footer { text-align: center; padding: 30px; color: #666; }
+pre { white-space: pre-wrap; line-height: 1.6; }
+@media (max-width: 850px) {
+    .grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 30px; }
+    .menu { margin-top: 10px; }
+    .menu a { display: inline-block; margin: 6px; }
+}

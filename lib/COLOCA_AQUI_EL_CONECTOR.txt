@@ -1,0 +1,5 @@
+Copia aqui tu archivo:
+mysql-connector-java-5.1.23-bin.jar
+
+La ruta final debe quedar asi:
+lib/mysql-connector-java-5.1.23-bin.jar

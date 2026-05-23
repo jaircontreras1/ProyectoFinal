@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CodeStartIAWebNetBeans14-impl" default="default" basedir="..">
+    <target name="default" depends="dist"/>
+    <target name="init">
+        <mkdir dir="build/web/WEB-INF/classes"/>
+        <mkdir dir="dist"/>
+    </target>
+    <target name="compile" depends="init">
+        <javac srcdir="src/java" destdir="build/web/WEB-INF/classes" source="1.8" target="1.8" includeantruntime="false" encoding="UTF-8">
+            <classpath>
+                <pathelement location="lib/mysql-connector-java-5.1.23-bin.jar"/>
+            </classpath>
+        </javac>
+    </target>
+    <target name="copy-web" depends="init">
+        <copy todir="build/web">
+            <fileset dir="web"/>
+        </copy>
+        <mkdir dir="build/web/WEB-INF/lib"/>
+        <copy todir="build/web/WEB-INF/lib" failonerror="false">
+            <fileset dir="lib" includes="mysql-connector-java-5.1.23-bin.jar"/>
+        </copy>
+    </target>
+    <target name="dist" depends="compile,copy-web">
+        <war destfile="dist/CodeStartIAWebNetBeans14.war" webxml="web/WEB-INF/web.xml">
+            <fileset dir="build/web"/>
+        </war>
+    </target>
+    <target name="clean">
+        <delete dir="build"/>
+        <delete dir="dist"/>
+    </target>
+</project>

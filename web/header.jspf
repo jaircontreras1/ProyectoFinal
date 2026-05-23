@@ -1,0 +1,21 @@
+<%@page import="codestartia.model.Usuario"%>
+<%
+    Usuario usuarioSesion = (Usuario) session.getAttribute("usuario");
+%>
+<nav class="navbar">
+    <a class="logo" href="index.jsp">CodeStart IA</a>
+    <div class="menu">
+        <a href="index.jsp">Inicio</a>
+        <a href="lecciones.jsp">Lecciones</a>
+        <a href="tips.jsp">Tips</a>
+        <a href="normatividades.jsp">Normatividades</a>
+        <% if (usuarioSesion != null) { %>
+            <a href="dashboard.jsp">Mi panel</a>
+            <% if (usuarioSesion.isAdmin()) { %><a href="admin.jsp">Admin</a><% } %>
+            <a href="logout">Salir</a>
+        <% } else { %>
+            <a href="login.jsp">Ingresar</a>
+            <a href="registro.jsp">Registro</a>
+        <% } %>
+    </div>
+</nav>

@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+title Casos de uso - Plataforma IA Generativa
+actor Visitante
+actor "Usuario registrado" as Usuario
+actor Administrador
+rectangle Sistema {
+  usecase "Ver pagina principal" as UC1
+  usecase "Registrarse" as UC2
+  usecase "Iniciar sesion" as UC3
+  usecase "Consultar lecciones" as UC4
+  usecase "Ver detalle de leccion" as UC5
+  usecase "Consultar tips" as UC6
+  usecase "Consultar normatividades" as UC7
+  usecase "Marcar leccion completada" as UC8
+  usecase "Administrar lecciones" as UC9
+}
+Visitante --> UC1
+Visitante --> UC2
+Visitante --> UC3
+Usuario --> UC4
+Usuario --> UC5
+Usuario --> UC6
+Usuario --> UC7
+Usuario --> UC8
+Administrador --> UC9
+Administrador --> UC4
+@enduml

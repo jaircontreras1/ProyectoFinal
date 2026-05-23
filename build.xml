@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CodeStartIAWebNetBeans14" default="default" basedir=".">
+    <description>Builds, tests, and runs the project CodeStartIAWebNetBeans14.</description>
+    <import file="nbproject/build-impl.xml"/>
+
+    <property name="tomcat.home" value="C:/Users/Dell/Downloads/tomcat/apache-tomcat-9.0.118"/>
+    <target name="deploy-local" depends="dist">
+        <copy file="dist/CodeStartIAWebNetBeans14.war"
+              todir="${tomcat.home}/webapps"
+              overwrite="true"/>
+        <echo message="WAR copiado correctamente a Tomcat."/>
+        <echo message="Abre: http://localhost:8080/CodeStartIAWebNetBeans14/"/>
+    </target>
+
+    <target name="start-tomcat">
+        <exec executable="${tomcat.home}/bin/startup.bat" spawn="true"/>
+    </target>
+
+    <target name="deploy-and-start" depends="deploy-local,start-tomcat">
+        <echo message="Proyecto desplegado e iniciado en Tomcat."/>
+    </target>
+</project>
